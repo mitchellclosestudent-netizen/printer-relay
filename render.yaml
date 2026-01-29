@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: printer-relay
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn server:app --bind 0.0.0.0:$PORT
